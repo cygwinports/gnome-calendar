@@ -1,0 +1,9 @@
+inherit gnome2
+
+NAME="gnome-calendar"
+VERSION=3.18.1
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="GNOME calendar"
+DESCRIPTION="GNOME Calendar is a simple and beautiful calendar application
+designed to perfectly fit the GNOME desktop."
