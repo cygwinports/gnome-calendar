@@ -7,3 +7,13 @@ CATEGORY="GNOME"
 SUMMARY="GNOME calendar"
 DESCRIPTION="GNOME Calendar is a simple and beautiful calendar application
 designed to perfectly fit the GNOME desktop."
+
+# for online-accounts panel
+REQUIRES="gnome-control-center"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	desktop-file-edit --remove-key=OnlyShowIn ${D}/usr/share/applications/*.desktop
+}
