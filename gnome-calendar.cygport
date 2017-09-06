@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gnome-calendar"
-VERSION=3.22.5
+VERSION=3.24.3
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME calendar"
