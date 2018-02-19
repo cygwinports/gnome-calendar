@@ -1,7 +1,7 @@
-inherit gnome2
+inherit gnome.org meson
 
 NAME="gnome-calendar"
-VERSION=3.24.3
+VERSION=3.26.3
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME calendar"
@@ -14,8 +14,8 @@ REQUIRES="gnome-control-center"
 LDFLAGS+=" -Wl,--export-all-symbols"
 
 src_install() {
-	cd ${B}
-	cyginstall
+	cd ${S}
+	meson_install
 
 	desktop-file-edit --remove-key=OnlyShowIn ${D}/usr/share/applications/*.desktop
 }
